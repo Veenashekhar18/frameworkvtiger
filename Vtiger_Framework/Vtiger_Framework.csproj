@@ -61,10 +61,10 @@
     <Folder Include="Documents\Tejas\" />
     <Folder Include="Documents\Veena\" />
     <Folder Include="Main Folder\GenericUtility\" />
-    <Folder Include="Main Folder\ObjectRepository\Campaigns\" />
-    <Folder Include="Main Folder\ObjectRepository\Contacts\" />
-    <Folder Include="Main Folder\ObjectRepository\Organizations\" />
-    <Folder Include="Main Folder\ObjectRepository\Products\" />
+    <Folder Include="Main Folder\ObjectRepository\CampaignsRepo\" />
+    <Folder Include="Main Folder\ObjectRepository\ContactsRepo\" />
+    <Folder Include="Main Folder\ObjectRepository\OrganizationsRepo\" />
+    <Folder Include="Main Folder\ObjectRepository\ProductsRepo\" />
     <Folder Include="Results\" />
     <Folder Include="Test Data\CommonData\" />
     <Folder Include="Test Data\ExcelData\" />
