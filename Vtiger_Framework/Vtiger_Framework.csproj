@@ -55,6 +55,25 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Documents\Datta\" />
+    <Folder Include="Documents\Sushma\" />
+    <Folder Include="Documents\Tejas\" />
+    <Folder Include="Documents\Veena\" />
+    <Folder Include="Main Folder\GenericUtility\" />
+    <Folder Include="Main Folder\ObjectRepository\Campaigns\" />
+    <Folder Include="Main Folder\ObjectRepository\Contacts\" />
+    <Folder Include="Main Folder\ObjectRepository\Organizations\" />
+    <Folder Include="Main Folder\ObjectRepository\Products\" />
+    <Folder Include="Results\" />
+    <Folder Include="Test Data\CommonData\" />
+    <Folder Include="Test Data\ExcelData\" />
+    <Folder Include="Test Scripts\Practice\" />
+    <Folder Include="Test Scripts\Test\CampaignsTest\" />
+    <Folder Include="Test Scripts\Test\ContactsTest\" />
+    <Folder Include="Test Scripts\Test\OrganizationsTest\" />
+    <Folder Include="Test Scripts\Test\ProductsTest\" />
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
