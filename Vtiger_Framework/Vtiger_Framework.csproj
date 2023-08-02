@@ -49,31 +49,30 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Documents\Datta\Class1.cs" />
+    <Compile Include="Documents\Sushma\Class1.cs" />
+    <Compile Include="Documents\Tejas\Class1.cs" />
+    <Compile Include="Documents\Veena\Class1.cs" />
     <Compile Include="Main Folder\GenericUtility\BaseClass.cs" />
+    <Compile Include="Main Folder\ObjectRepository\CampaignsRepo\Class1.cs" />
+    <Compile Include="Main Folder\ObjectRepository\ContactsRepo\Class1.cs" />
+    <Compile Include="Main Folder\ObjectRepository\OrganizationsRepo\Class1.cs" />
+    <Compile Include="Main Folder\ObjectRepository\ProductsRepo\Class1.cs" />
+    <Compile Include="Results\Class1.cs" />
+    <Compile Include="Test Data\CommonData\Class1.cs" />
+    <Compile Include="Test Data\ExcelData\Class1.cs" />
+    <Compile Include="Test Scripts\Practice\Class1.cs" />
+    <Compile Include="Test Scripts\Test\CampaignsTest\Class1.cs" />
+    <Compile Include="Test Scripts\Test\ContactsTest\Class1.cs" />
+    <Compile Include="Test Scripts\Test\OrganizationsTest\Class1.cs" />
+    <Compile Include="Test Scripts\Test\ProductsTest\Class1.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Documents\Datta\" />
-    <Folder Include="Documents\Sushma\" />
-    <Folder Include="Documents\Tejas\" />
-    <Folder Include="Documents\Veena\" />
-    <Folder Include="Main Folder\ObjectRepository\CampaignsRepo\" />
-    <Folder Include="Main Folder\ObjectRepository\ContactsRepo\" />
-    <Folder Include="Main Folder\ObjectRepository\OrganizationsRepo\" />
-    <Folder Include="Main Folder\ObjectRepository\ProductsRepo\" />
-    <Folder Include="Results\" />
-    <Folder Include="Test Data\CommonData\" />
-    <Folder Include="Test Data\ExcelData\" />
-    <Folder Include="Test Scripts\Practice\" />
-    <Folder Include="Test Scripts\Test\CampaignsTest\" />
-    <Folder Include="Test Scripts\Test\ContactsTest\" />
-    <Folder Include="Test Scripts\Test\OrganizationsTest\" />
-    <Folder Include="Test Scripts\Test\ProductsTest\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
