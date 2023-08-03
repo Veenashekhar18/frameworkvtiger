@@ -7,9 +7,7 @@ using System.Threading.Tasks;
 
 namespace Vtiger_Framework.Main_Folder.GenericUtility
 {
-    
-    public class BaseClass
+    internal class BaseClass
     {
-
     }
 }
