@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Vtiger_Framework.Main_Folder.GenericUtility
 {
-    internal class BaseClass
+    
+    public class BaseClass
     {
+        
+        public void Mathod()
+        {
+
+        }
     }
 }
