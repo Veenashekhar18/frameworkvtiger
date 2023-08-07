@@ -17,7 +17,13 @@ namespace Vtiger_Framework.Main_Folder.ObjectRepository.CampaignsRepo
     {
 
         [FindsBy(How = How.XPath, Using = "//img[@alt='Create Campaign...']")] private IWebElement add_ymbol { get; set; }
+        [FindsBy(How = How.XPath, Using = "//a[@class='hdrLink']")] private IWebElement campaignLink;//{ get; set; }
+        public IWebElement campaign_Link
+        {
+            get { return campaignLink; }
+            set { campaignLink = value; }
 
+        }
         public CampaignsHomePage(IWebDriver driver)
         {
             PageFactory.InitElements(driver, this);
@@ -27,5 +33,7 @@ namespace Vtiger_Framework.Main_Folder.ObjectRepository.CampaignsRepo
         {
             add_ymbol.Click();
         }
+
+
     }
 }
