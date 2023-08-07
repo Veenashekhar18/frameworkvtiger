@@ -22,7 +22,7 @@ namespace Vtiger_Framework.Main_Folder.ObjectRepository.ProductsRepo
         [FindsBy(How = How.Id, Using = "unit_price")]
         public IWebElement unitpricetxt; //enter price of a unit
         [FindsBy(How = How.Id, Using = "qtyinstock")]
-        public IWebElement quantitytxt; //enter quantity available stocks
+        public IWebElement stockquantitytxt; //enter quantity available stocks
         [FindsBy(How = How.Id, Using = "commissionrate")]
         public IWebElement commissionratetext;
         [FindsBy(How = How.Id, Using = "qty_per_unit")]
@@ -47,14 +47,28 @@ namespace Vtiger_Framework.Main_Folder.ObjectRepository.ProductsRepo
         {
             searchproduct.Click();
         }
-        public void Unitprice(string price)
-        {
-            unitpricetxt.SendKeys(price);
-        }
 
         public void Editlink()
         {
             editlink.Click();
         }
+        public void Unitprice(string price)
+        {
+            unitpricetxt.SendKeys(price);
+        }
+        public void Commissionrate(string commissionrate)
+        {
+            commissionratetext.SendKeys(commissionrate);
+        }
+        public void Quantity(string quantity)
+        {
+            stockquantitytxt.SendKeys(quantity);
+        }
+       
+        public void UnitQty(string unitqty)
+        {
+            qtytext.SendKeys(unitqty);
+        }
+        
     }
 }

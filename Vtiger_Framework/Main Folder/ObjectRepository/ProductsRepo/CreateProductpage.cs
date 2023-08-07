@@ -20,16 +20,16 @@ namespace Vtiger_Framework.Main_Folder.ObjectRepository.ProductsRepo
         [FindsBy(How = How.XPath, Using = "//select[@name='productcategory']")]
         public IWebElement productcategorydropdown; //select category
         [FindsBy(How=How.Id,Using = "qtyinstock")]
-        public IWebElement quantitytxt; //enter quantity available stocks
+        public IWebElement stockquantitytxt; //enter quantity available stocks
         [FindsBy(How=How.Id,Using = "commissionrate")]
         public IWebElement commissionratetext;
         [FindsBy(How=How.Id,Using = "qty_per_unit")]
-        public IWebElement qtytext; //enter quantity
+        public IWebElement unitqtytext; //enter quantity
         [FindsBy(How=How.Id,Using = "unit_price")]
         public IWebElement unitpricetxt; //enter price of a unit
-        [FindsBy(How=How.XPath,Using = "//input[@title='Save [Alt+S]']")]
+        [FindsBy(How=How.XPath,Using = "//input[@title='Save [Alt+S]' and @fdprocessedid='4lvaer']")]
         public IWebElement savebtn; //click on save button
-        [FindsBy(How=How.XPath,Using = "//input[@title='Cancel [Alt+X]']")]
+        [FindsBy(How=How.XPath,Using = "//input[@title='Cancel [Alt+X]' and @fdprocessedid='uiewai']")]
         public IWebElement cancelbtn; //click on cancel button
 
         public CreateProductpage(IWebDriver driver)
@@ -68,13 +68,13 @@ namespace Vtiger_Framework.Main_Folder.ObjectRepository.ProductsRepo
             commissionratetext.SendKeys(commissionrate);
         }
 
-        public void Quantityperuit()
+        public void Quantityperunit(string unitqty)
         {
-
+            unitqtytext.SendKeys(unitqty);
         }
-        public void Quantity(string quantity)
+        public void StockQuantity(string quantity)
         {
-            quantitytxt.SendKeys(quantity);
+           stockquantitytxt.SendKeys(quantity);
         }
 
         public void Save()
