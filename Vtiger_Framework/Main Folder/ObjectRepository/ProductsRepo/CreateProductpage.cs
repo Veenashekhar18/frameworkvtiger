@@ -72,9 +72,9 @@ namespace Vtiger_Framework.Main_Folder.ObjectRepository.ProductsRepo
         {
             unitqtytext.SendKeys(unitqty);
         }
-        public void StockQuantity(string quantity)
+        public void StockQuantity(string stockquantity)
         {
-           stockquantitytxt.SendKeys(quantity);
+           stockquantitytxt.SendKeys(stockquantity);
         }
 
         public void Save()

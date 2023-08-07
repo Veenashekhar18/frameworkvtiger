@@ -472,6 +472,7 @@
     <Compile Include="Test Scripts\Test\ContactsTest\Class1.cs" />
     <Compile Include="Test Scripts\Test\LoginTest\LoginTest.cs" />
     <Compile Include="Test Scripts\Test\OrganizationsTest\Class1.cs" />
+    <Compile Include="Test Scripts\Test\ProductsTest\CreateProductTest.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -481,12 +482,7 @@
     <None Include="Test Data\ExcelData\TestData Vtiger.xlsx" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Reports\" />
     <Folder Include="Test Scripts\Test\ProductsTest\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
-    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
