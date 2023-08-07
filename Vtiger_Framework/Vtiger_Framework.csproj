@@ -71,6 +71,7 @@
     <Compile Include="Main Folder\ObjectRepository\CampaignsRepo\CreatingNewCampaignPage.cs" />
     <Compile Include="Main Folder\ObjectRepository\CampaignsRepo\VTigerHomePage.cs" />
     <Compile Include="Main Folder\ObjectRepository\ContactsRepo\Class1.cs" />
+    <Compile Include="Main Folder\ObjectRepository\HomeRepo\HomePage.cs" />
     <Compile Include="Main Folder\ObjectRepository\LoginRepo\LoginPage.cs" />
     <Compile Include="Main Folder\ObjectRepository\OrganizationsRepo\Class1.cs" />
     <Compile Include="Main Folder\ObjectRepository\ProductsRepo\CreateProductpage.cs" />
@@ -87,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Test Data\ExcelData\TestData Vtiger.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Test Scripts\Test\ProductsTest\" />
