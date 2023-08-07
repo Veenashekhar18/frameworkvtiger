@@ -1,6 +1,4 @@
-﻿using AventStack.ExtentReports;
-using AventStack.ExtentReports.Reporter;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
@@ -20,33 +18,11 @@ namespace Vtiger_Framework.Main_Folder.GenericUtility
     public class BaseClass
     {
         public IWebDriver driver;
-        public static ExtentReports extentReports = new ExtentReports();
-        public static ExtentHtmlReporter extentHtmlReporter = new ExtentHtmlReporter(CommonData.reportspath);
         public static TestContext TestContext;
         public TestContext test_context
         {
             get { return TestContext; }
             set { TestContext = value; }
-        }
-
-        /// <summary>
-        /// This method is used to get or generate the reports from the every execution.
-        /// </summary>
-        /// <param name="_testcontext"></param>
-        [AssemblyInitialize]
-        [Owner("Datta")]
-        public static void AssemblyInitialize(TestContext _testcontext) 
-        {
-            TestContext = _testcontext;          
-            extentReports.AddSystemInfo("Organisation" , "Tyss");
-            extentReports.AttachReporter(extentHtmlReporter);
-        }
-        [AssemblyCleanup]
-        [Owner("Datta")]
-        public static void AssemblyCleanup()
-        {
-            extentReports.Flush();
-            extentHtmlReporter.Stop();
         }
         /// <summary>
         /// This test initialise is use to open the browser.
@@ -89,7 +65,8 @@ namespace Vtiger_Framework.Main_Folder.GenericUtility
         [TestCleanup]
         public void CloseBrowser()
         {
-            
+            HomePage homePage = new HomePage(driver);
+            homePage.Logout();
             driver.Close();
             driver.Dispose();
         }
