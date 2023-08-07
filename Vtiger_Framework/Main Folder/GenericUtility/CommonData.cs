@@ -14,5 +14,6 @@ namespace Vtiger_Framework.Main_Folder.GenericUtility
         public const string url = "http://localhost:8888/";
         public const string username = "admin";
         public const string password = "password";
+        public const string excelpath = "D:\\VisualStudioCode\\ProjectVtiger\\Vtiger_Framework\\Test Data\\ExcelData\\TestData Vtiger.xlsx";
     }
 }
