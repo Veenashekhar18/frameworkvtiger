@@ -65,6 +65,7 @@
     <Compile Include="Documents\Veena\Class1.cs" />
     <Compile Include="Main Folder\GenericUtility\BaseClass.cs" />
     <Compile Include="Main Folder\GenericUtility\CommonData.cs" />
+    <Compile Include="Main Folder\GenericUtility\ExcelUtility.cs" />
     <Compile Include="Main Folder\GenericUtility\WebDriverUtility.cs" />
     <Compile Include="Main Folder\ObjectRepository\CampaignsRepo\CampaignsHomePage.cs" />
     <Compile Include="Main Folder\ObjectRepository\CampaignsRepo\CreatingNewCampaignPage.cs" />
