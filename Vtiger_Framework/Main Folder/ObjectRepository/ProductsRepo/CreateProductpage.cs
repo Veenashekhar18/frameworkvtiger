@@ -47,7 +47,7 @@ namespace Vtiger_Framework.Main_Folder.ObjectRepository.ProductsRepo
             createproductbtn.Click();
         }
 
-        public void Productname()
+        public void Productname(string productname)
         {
             productnametxt.SendKeys(productname);
         }
@@ -58,12 +58,12 @@ namespace Vtiger_Framework.Main_Folder.ObjectRepository.ProductsRepo
             productcategorydropdown.Click();
         }
 
-        public void Unitprice()
+        public void Unitprice(string price)
         {
             unitpricetxt.SendKeys(price);
         }
 
-        public void Commissionrate()
+        public void Commissionrate(string commissionrate)
         {
             commissionratetext.SendKeys(commissionrate);
         }
@@ -72,7 +72,7 @@ namespace Vtiger_Framework.Main_Folder.ObjectRepository.ProductsRepo
         {
 
         }
-        public void Quantity()
+        public void Quantity(string quantity)
         {
             quantitytxt.SendKeys(quantity);
         }
