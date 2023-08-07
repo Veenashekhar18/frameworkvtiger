@@ -39,7 +39,7 @@ namespace Vtiger_Framework.Main_Folder.GenericUtility
         public void MouseHover(IWebElement element)
         {
             Actions action=new Actions(driver);
-            action.MoveToElement(element);
+            action.MoveToElement(element).Perform();
     }
     }
 }

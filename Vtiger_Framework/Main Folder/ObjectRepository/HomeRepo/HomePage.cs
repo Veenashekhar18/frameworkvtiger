@@ -2,9 +2,12 @@
 using OpenQA.Selenium.Support.PageObjects;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
+using Vtiger_Framework.Main_Folder.GenericUtility;
 
 namespace Vtiger_Framework.Main_Folder.ObjectRepository.HomeRepo
 {
@@ -38,6 +41,10 @@ namespace Vtiger_Framework.Main_Folder.ObjectRepository.HomeRepo
         private IWebElement dashboard;
         [FindsBy(How = How.XPath, Using = "//table[@class='hdrTabBg']/descendant::a[text()='More']")]
         public IWebElement more;
+        [FindsBy(How =How.XPath,Using = "//span[text()=' Administrator']/parent::td/following-sibling::td/child::img[@src='themes/softed/images/user.PNG']")]
+        public IWebElement administrator;
+        [FindsBy(How =How.XPath,Using = "//a[text()='Sign Out']")]
+        public IWebElement signout;
 
         //initialisation
         public HomePage(IWebDriver driver)
@@ -46,9 +53,20 @@ namespace Vtiger_Framework.Main_Folder.ObjectRepository.HomeRepo
 
         }
         //Business Library
+        public void Logout()
+        {
+            WebDriverUtility webDriverUtility = new WebDriverUtility();
+            webDriverUtility.MouseHover(administrator);
+            signout.Click();
+        }
         public By getMore()
         {
-            By locator = By.XPath( "more");
+            By locator = By.XPath("more");
+            return locator;
+        }
+        public By getAdministrator()
+        {
+            By locator = By.XPath("//span[text()=' Administrator']/parent::td/following-sibling::td/child::img[@src='themes/softed/images/user.PNG']");
             return locator;
         }
         public void HomepageClick()
@@ -95,5 +113,6 @@ namespace Vtiger_Framework.Main_Folder.ObjectRepository.HomeRepo
         {
             dashboard.Click();
         }
+        
     }
 }
