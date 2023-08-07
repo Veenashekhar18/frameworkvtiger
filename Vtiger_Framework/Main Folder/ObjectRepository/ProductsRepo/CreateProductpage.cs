@@ -9,24 +9,30 @@ using System.Threading.Tasks;
 
 namespace Vtiger_Framework.Main_Folder.ObjectRepository.ProductsRepo
 {
-    internal class CreateProduct
+    internal class CreateProductpage 
     {
         [FindsBy(How = How.XPath, Using = "//a[.='Products']")]
-        public IWebElement productslink;
+        public IWebElement productslink; //click on products link
         [FindsBy(How = How.XPath, Using = "//img[@title='Create Product...']")]
-        public IWebElement createproductbtn;
+        public IWebElement createproductbtn; //click on create productbutton
         [FindsBy(How=How.Name,Using = "productname")]
-        public IWebElement productnametxt;
+        public IWebElement productnametxt;//enter product name
         [FindsBy(How = How.XPath, Using = "//select[@name='productcategory']")]
-        public IWebElement productcategorydropdown;
+        public IWebElement productcategorydropdown; //select category
         [FindsBy(How=How.Id,Using = "qtyinstock")]
-        public IWebElement quantitytxt;
+        public IWebElement quantitytxt; //enter quantity available stocks
+        [FindsBy(How=How.Id,Using = "commissionrate")]
+        public IWebElement commissionratetext;
+        [FindsBy(How=How.Id,Using = "qty_per_unit")]
+        public IWebElement qtytext; //enter quantity
+        [FindsBy(How=How.Id,Using = "unit_price")]
+        public IWebElement unitpricetxt; //enter price of a unit
         [FindsBy(How=How.XPath,Using = "//input[@title='Save [Alt+S]']")]
-        public IWebElement savebtn;
+        public IWebElement savebtn; //click on save button
         [FindsBy(How=How.XPath,Using = "//input[@title='Cancel [Alt+X]']")]
-        public IWebElement cancelbtn;
+        public IWebElement cancelbtn; //click on cancel button
 
-        public CreateProduct(IWebDriver driver)
+        public CreateProductpage(IWebDriver driver)
         {
             PageFactory.InitElements(driver, this);
         }
@@ -43,7 +49,7 @@ namespace Vtiger_Framework.Main_Folder.ObjectRepository.ProductsRepo
 
         public void Productname()
         {
-            productnametxt.SendKeys("dgshss");
+            productnametxt.SendKeys(productname);
         }
 
         public void Productcategory()
@@ -52,14 +58,29 @@ namespace Vtiger_Framework.Main_Folder.ObjectRepository.ProductsRepo
             productcategorydropdown.Click();
         }
 
+        public void Unitprice()
+        {
+            unitpricetxt.SendKeys(price);
+        }
+
+        public void Commissionrate()
+        {
+            commissionratetext.SendKeys(commissionrate);
+        }
+
+        public void Quantityperuit()
+        {
+
+        }
         public void Quantity()
         {
-            quantitytxt.SendKeys("12");
+            quantitytxt.SendKeys(quantity);
         }
 
         public void Save()
         {
             savebtn.Click();
         }
+
     }
 }
