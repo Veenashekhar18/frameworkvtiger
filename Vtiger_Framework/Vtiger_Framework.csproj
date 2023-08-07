@@ -65,11 +65,11 @@
     <Compile Include="Documents\Veena\Class1.cs" />
     <Compile Include="Main Folder\GenericUtility\BaseClass.cs" />
     <Compile Include="Main Folder\GenericUtility\WebDriverUtility.cs" />
-    <Compile Include="Main Folder\GenericUtility\Interface1.cs" />
     <Compile Include="Main Folder\ObjectRepository\CampaignsRepo\Class1.cs" />
     <Compile Include="Main Folder\ObjectRepository\ContactsRepo\Class1.cs" />
     <Compile Include="Main Folder\ObjectRepository\OrganizationsRepo\Class1.cs" />
     <Compile Include="Main Folder\ObjectRepository\ProductsRepo\Class1.cs" />
+    <Compile Include="NewClass.cs" />
     <Compile Include="Results\Class1.cs" />
     <Compile Include="Test Data\CommonData\Class1.cs" />
     <Compile Include="Test Data\ExcelData\Class1.cs" />
