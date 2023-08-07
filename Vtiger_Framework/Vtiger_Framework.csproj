@@ -76,7 +76,7 @@
     <Compile Include="Test Scripts\Test\CampaignsTest\Class1.cs" />
     <Compile Include="Test Scripts\Test\ContactsTest\Class1.cs" />
     <Compile Include="Test Scripts\Test\OrganizationsTest\Class1.cs" />
-    <Compile Include="Test Scripts\Test\ProductsTest\Class1.cs" />
+    <Compile Include="Test Scripts\Test\ProductsTest\Createproduct.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
